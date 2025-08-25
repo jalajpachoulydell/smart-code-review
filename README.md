@@ -11,7 +11,7 @@ A desktop (Tkinter) app to:
 ---
 
 ## Key Features
-- **Ensemble reviews**: Run multiple models concurrently; optional synthesis to a single best review.
+- **Multimodel  reviews**: Run multiple models concurrently; 
 - **HTML reports**: Clean, printable output with per‑model sections, index, and an error‑log link if models fail.
 - **Smart filtering**: Exclude generated artifacts from diffs using path globs, regex, and header markers.
 - **GitHub tooling**:
