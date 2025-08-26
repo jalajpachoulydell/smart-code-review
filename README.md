@@ -9,7 +9,7 @@ A desktop (Tkinter) app to:
 > Works with an OpenAI‑compatible gateway (e.g., **Dell AIA Gateway**) using either a **preissued bearer token** or **client‑credentials (aia_auth)** flow. Supports GitHub.com and GitHub Enterprise.
 
 '''
-## QuickSetup
+
 ## 🚀 Quick Setup
 
 Follow these steps to set up your Python environment:
