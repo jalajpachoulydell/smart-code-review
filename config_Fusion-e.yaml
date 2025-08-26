@@ -1,14 +1,14 @@
 gateway_base: https://aia.gateway.dell.com/genai/dev/v1
 token_mode: aia_auth
 aia_access_token: ''
-client_id: 
+client_id:
 host: github.com
 org: fusion-e
-client_secret: 
+client_secret:
 scope: ''
-github_token: 
-enable_pki_zip_patch: false
-pki_zip_url: ''
+github_token:
+enable_pki_zip_patch: true
+pki_zip_url: https://pki.dell.com//Dell%20Technologies%20PKI%202018%20B64_PEM.zip
 pki_pems:
 - Dell Technologies Root Certificate Authority 2018.pem
 - Dell Technologies Issuing CA 101_new.pem
@@ -18,13 +18,7 @@ correlation_id: Fusion-e
 output_format: html
 selected_models:
 - llama-3-3-70b-instruct
-- mixtral-8x7b-instruct-v01
-- mistral-7b-instruct-v03-fc
-- llama-3-1-8b-instruct
-- phi-3-mini-128k-instruct
 - gemma-3-27b-it
-- codellama-13b-instruct
-- gpt-oss-20b
 parallel_models: true
 skip_generated: true
 generated_path_globs:

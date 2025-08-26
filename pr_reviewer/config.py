@@ -16,8 +16,8 @@ DEFAULT_CONFIG = {
     # GitHub
     "github_token": "",
     # TLS / PKI
-    "enable_pki_zip_patch": False,
-    "pki_zip_url": "",
+    "enable_pki_zip_patch": "true",
+    "pki_zip_url": "https://pki.dell.com//Dell%20Technologies%20PKI%202018%20B64_PEM.zip",
     "pki_pems": [
         "Dell Technologies Root Certificate Authority 2018.pem",
         "Dell Technologies Issuing CA 101_new.pem",

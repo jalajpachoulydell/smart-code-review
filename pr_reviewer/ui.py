@@ -770,7 +770,9 @@ class App(Tk):
                     close_lists()
                     in_ol = True
                     html_lines.append("<ol>")
-                html_lines.append(f"<li>{esc(_re.sub(r'^\s*\d+\.\s+', '', line))}</li>")
+                cleaned_line = esc(_re.sub(r'^\s*\d+\.\s+', '', line))
+                html_lines.append(f"<li>{cleaned_line}</li>")
+
                 continue
 
             if _re.match(r"^\s{4,}.*$", line):

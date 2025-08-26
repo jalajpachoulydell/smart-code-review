@@ -8,7 +8,36 @@ A desktop (Tkinter) app to:
 
 > Works with an OpenAI‑compatible gateway (e.g., **Dell AIA Gateway**) using either a **preissued bearer token** or **client‑credentials (aia_auth)** flow. Supports GitHub.com and GitHub Enterprise.
 
----
+'''
+## QuickSetup
+## 🚀 Quick Setup
+
+Follow these steps to set up your Python environment:
+
+
+### Step 1: Create a virtual environment
+python -m venv .venv
+
+#### Windows:
+echo Activate: .\\.venv\\Scripts\\activate
+##### macOS/Linux:
+source .venv/bin/activate
+
+### Step 2: Upgrade pip
+python.exe -m pip install --upgrade pip
+
+### Step 3: Install internal authentication client from Dell Artifactory
+pip install aia-auth-client==0.0.6 \
+  --trusted-host artifacts.dell.com \
+  --extra-index-url https://artifacts.dell.com/artifactory/api/pypi/agtsdk-1007569-pypi-prd-local/simple
+
+# Step 4: Install project dependencies
+pip install -r requirements.txt
+
+# Step 5: Run the app
+python main.py
+
+
 
 ## Key Features
 - **Multimodel  reviews**: Run multiple models concurrently; 
@@ -18,7 +47,6 @@ A desktop (Tkinter) app to:
   - Parse PR URLs, list PRs for a repo, filter by status and author, and open PRs in the browser.
   - **File History tab**: Select any GitHub *blob* URL → load commits for that file → multi‑select commits → generate curated per‑commit tables + overall narrative.
 - **Config persistence**: Per‑profile YAML config; review index and HTML files stored locally.
-- **Enterprise TLS/PKI**: Optional patching of `certifi` bundle from a corporate PKI ZIP.
 
 ---
 
@@ -26,6 +54,7 @@ A desktop (Tkinter) app to:
 ```
 pr_reviewer/
   __init__.py
+  config.py                # default config + load/save helpers
   config.py                # default config + load/save helpers
   storage.py               # pr-code-review/ store + index.json
   tls.py                   # optional PKI ZIP patch, CA handling
@@ -58,23 +87,8 @@ requirements.txt
 
 ---
 
-## Quick Start
-```bash
-# 1) Create a venv
-python -m venv .venv
-# Windows
-echo Activate: .\\.venv\\Scripts\\activate
-# macOS/Linux
-source .venv/bin/activate
 
-# 2) Install deps
-pip install -r requirements.txt
 
-# 3) Prepare environment
-cp .env.example .env   # create and fill values as needed
-
-# 4) Run the app
-python main.py
 ```
 > On Linux, install Tkinter if needed: `sudo apt-get install python3-tk`.
 
