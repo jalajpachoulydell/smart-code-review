@@ -30,10 +30,10 @@ pip install aia-auth-client==0.0.6 \
   --trusted-host artifacts.dell.com \
   --extra-index-url https://artifacts.dell.com/artifactory/api/pypi/agtsdk-1007569-pypi-prd-local/simple
 
-# Step 4: Install project dependencies
+### Step 4: Install project dependencies
 pip install -r requirements.txt
 
-# Step 5: Run the app
+### Step 5: Run the app
 python main.py
 
 
