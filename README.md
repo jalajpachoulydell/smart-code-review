@@ -1,7 +1,7 @@
 
 # Smart Code Review — GitHub PR & File‑History Reviews via LLM 
 
-A desktop (Tkinter) app to:
+A desktop python app to:
 - Fetch a GitHub Pull Request (PR) diff, run **multiple LLMs in parallel**, and synthesize a concise, actionable **HTML review report**.
 - Browse repos/PRs, filter by author/title/status, and keep a **local history** of generated reviews.
 - Generate **curated file‑history summaries** across multiple commits for a single file—each commit rendered as an HTML table with “Change Summary” and “Likely Reasons”.
