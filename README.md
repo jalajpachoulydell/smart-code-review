@@ -1,5 +1,5 @@
 
-# Smart Core Review — GitHub PR & File‑History Reviews via LLM 
+# Smart Code Review — GitHub PR & File‑History Reviews via LLM 
 
 A desktop (Tkinter) app to:
 - Fetch a GitHub Pull Request (PR) diff, run **multiple LLMs in parallel**, and synthesize a concise, actionable **HTML review report**.
