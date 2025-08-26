@@ -16,8 +16,8 @@ A desktop (Tkinter) app to:
 ### 🛠️ Steps Overview
 1. Request access to Dell Digital Cloud via the internal onboarding process.
 2. Obtain your `client_id` and `client_secret` from the AIA portal.
-3. Use these credentials to generate an access token via the AIA authentication flow.
-4. Configure your environment or application to use the token when calling models.
+3. These credentials required to generate an access token for  AI authentication flow and need to set in the Tool( Configuration Tab).
+
 Refer - https://confluence.dell.com/display/AIA/Set+Up+Accounts+in+Dell+Digital+Cloud
 
 Follow these steps to set up your Python environment:
